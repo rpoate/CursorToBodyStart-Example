@@ -20,7 +20,7 @@ namespace CursorToBodyStart
 
         private void AddText_Click(object sender, EventArgs e)
         {
-            HtmlElement thePtag = this.htmlEditControl1.InsertHTMLELement("p");
+            HtmlElement thePtag = this.htmlEditControl1.InsertHTMLElement("p");
             thePtag.InnerText = "Some text in here";
 
             this.htmlEditControl1.MoveCursorToElement(thePtag, Zoople.HTMLEditControl.ELEM_ADJ.ELEM_ADJ_BeforeEnd);
